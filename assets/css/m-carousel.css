@@ -1,0 +1,109 @@
+/* slide hero */
+.slide_hero_content{
+    width: 100%;
+    height: auto!important;
+    display: block;
+    overflow: hidden;
+}
+.slide_hero_content a{
+    display: flex;
+}
+.slide_hero_content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide_hero_content .owl-dots{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+.slide_hero_content .owl-dots button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999999;
+    margin: 0 4px;
+    position: relative;
+}
+.slide_hero_content .owl-dots button.active::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #777;
+}
+/* slide hero */
+
+
+/* slide clients */
+.client_slide.owl-carousel .owl-stage-outer{
+ padding-top: 80px;
+}
+.client_slide{
+    padding: 20px 10px;
+}
+.client_card{
+    text-align: center;
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: var(--color-white);
+    position: relative;
+    padding: 100px 15px 30px;
+    border-radius: 5px;
+    z-index: 10;
+}
+.client_card .client_card_img{
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+}
+.client_card_img img{
+    width: 140px!important;
+    margin: auto;
+}
+.client_card_info h3{
+    color: var(--color-blue-2);
+    margin-bottom: 20px;
+}
+.client_card_info p{
+    color: var(--color-blue-2);
+    font-size: .95em;
+    margin-bottom: 20px;
+}
+.client_card small{
+    color: var(--color-blue-2);
+    font-weight: 200;
+}
+.client_slide .owl-dots{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 0;
+}
+.client_slide .owl-dots button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999999;
+    margin: 0 3px;
+    position: relative;
+}
+.client_slide .owl-dots button.active::after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #777;
+}
