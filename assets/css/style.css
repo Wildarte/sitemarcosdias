@@ -7,6 +7,7 @@
     --color-gray-2: #F7F7F7;
     --color-gray-3: #BDBDBD;
     --color-gray-4: #FAFAFA;
+    --color-gray-5: #9C9EA6;
     --color-dark: #4F5955;
     --color-white: #ffffff;
     --color-black: #000000;
@@ -29,16 +30,19 @@
     max-width: calc(var(--container) / 2);
 }
 .bg-gray{
-    background-color: var(--color-gray);
+    background-color: var(--color-gray)!important;
 }
 .bg-gray-2{
-    background-color: var(--color-gray-2);
+    background-color: var(--color-gray-2)!important;
 }
 .bg-gray-3{
-    background-color: var(--color-gray-3);
+    background-color: var(--color-gray-3)!important;
 }
 .bg-blue-2{
     background-color: var(--color-blue-2)!important;
+}
+.bg-gray-5{
+    background-color: var(--color-gray-5)!important;
 }
 .bg-blue-dark{
     background-color: var(--color-blue-dark)!important;
@@ -121,6 +125,11 @@
 }
 .text-uppercase{
     text-transform: uppercase;
+}
+.header-default{
+    text-align: center;
+    padding: 60px 10px;
+    background-color: var(--color-gray-2);
 }
 /* general style */
 
@@ -735,6 +744,75 @@ footer.footer{
 .header_social_mobile{
     display: none!important;
 }
+
+/* blog style */
+.body_blog{
+    padding: 60px 10px;
+}
+.sidebar{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.sidebar_category{
+    margin-bottom: 20px;
+}
+.sidebar_category ul li{
+    width: 100%;
+    display: flex;
+}
+.sidebar_category ul li a{
+    border: 1px solid;
+    width: 100%;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+.sidebar_category ul li a i{
+    margin-right: 10px;
+}
+.sidebar_category ul li a:hover{
+    background-color: var(--color-blue-h);
+}
+
+.posts_blog{
+    flex-basis: 75%;
+    padding: 10px;
+}
+.card_blog{
+    flex-basis: calc(50% - 30px);
+    margin: 15px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    border-bottom: 2px solid var(--color-gray-3);
+}
+.card_blog a{
+    display: flex;
+    flex-direction: column;
+}
+.card_blog img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.card_blog_header{
+    padding: 15px;
+}
+.card_blog_excerpt{
+    padding: 15px;
+    margin: 0;
+}
+.cta_sidebar{
+    padding: 15px;
+    border-radius: 4px;
+    background-color: var(--color-blue-2);
+}
+/* blog style */
+
+
 
 @media(max-width: 1366px){
     .valorize_info{
