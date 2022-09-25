@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/m-carousel.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/post.css">
     <title>Marcos Dias</title>
 </head>
 <body>
