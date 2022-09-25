@@ -822,6 +822,63 @@ footer.footer{
 
 
 
+/* page office */
+.cta_find_office{
+    padding: 60px 10px;
+    background-color: var(--color-gray-3);
+}
+.form_office .form_group.f-100{
+    margin: 10px;
+}
+.form_office .form_group{
+    border: 1px solid var(--color-gray-3);
+}
+.form_office .form_group.form_group_button{
+    border: none;
+}
+.office_uni_img img{
+    width: 100%;
+    height: 100%;
+}
+.office_uni_info{
+    padding: 60px 40px 60px 50px;
+}
+.office_header_info{
+    display: flex;
+    position: relative;
+}
+.office_header_info i{
+    position: absolute;
+    left: -34px;
+}
+.office_content{
+    width: 85%;
+    margin: auto;
+}
+.office_tag{
+    color: var(--color-blue);
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+.office_contact{
+    margin: 0;
+    padding: 10px 0;
+}
+.office_content img{
+    width: 100%;
+}
+.office_contact_row span{
+    color: var(--color-gray-5);
+}
+.office_contact_row p{
+    font-weight: 600;
+}
+.load_more_office{
+    padding: 20px 10px;
+    text-align: center;
+}
+/* page office */
+
 
 
 @media(max-width: 1366px){
@@ -1072,6 +1129,18 @@ footer.footer{
         width: 80%;
         margin: 20px auto;
     }
+    .posts_blog{
+        padding: 10px 0;
+    }
+    .sidebar{
+        flex-basis: unset;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .card_blog{
+        flex-basis: calc(50% - 20px);
+        margin: 10px;
+    }
 }
 
 @media(max-width: 600px){
@@ -1233,5 +1302,8 @@ footer.footer{
     .subtitle-default{
         font-size: 1.1em;
         margin: 10px 0;
+    }
+    .header-default{
+        padding: 20px 10px 10px;
     }
 }

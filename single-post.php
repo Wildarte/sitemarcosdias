@@ -24,7 +24,7 @@
                         </div>
 
                         <div class="share_post container-post desc-default">
-                            Compartilhe este post:
+                            <span>Compartilhe este post:</span>
 
                             <ul class="links_share">
                                 <li>
@@ -115,7 +115,7 @@ Sabemos que a demissão, por si só, já é uma grande preocupação para os tra
                     </div>
 
                     <div class="share_post container-post desc-default">
-                            Compartilhe este post:
+                            <span>Compartilhe este post:</span>
 
                             <ul class="links_share">
                                 <li>
@@ -159,7 +159,7 @@ Sabemos que a demissão, por si só, já é uma grande preocupação para os tra
                         <a href="" class="card_post_related_reverse">
                             <img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg" alt="">
                             <div class="card_post_related_info">
-                                <p>Anterior</p>
+                                <p>Próximo</p>
                                 <h4>Metas abusivas: cobrança ou humilhação?</h4>
                             </div>
                         </a>
