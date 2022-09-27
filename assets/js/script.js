@@ -6,6 +6,7 @@ const icon_item = document.querySelectorAll('.list_ask li h4 i');
 const btn_menu = document.querySelector('.btn_menu');
 const nav_menu = document.querySelector('nav.menu');
 const btn_close_menu = document.querySelector('.btn_close_menu');
+const office_uni = document.querySelector('.office_uni');
 
 $(document).ready(function(){
     $("#slide_hero").owlCarousel({
@@ -87,6 +88,26 @@ $(document).ready(function(){
             }
         }
     });
+
+
+    $("#slide_carousel_main_office").owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1,
+            },
+            1000:{
+                items:1,
+            }
+        }
+    });
 });
 
 close_cta_top.addEventListener('click', () => {
@@ -151,3 +172,4 @@ btn_close_menu.addEventListener('click', () => {
     nav_menu.classList.remove('open_menu_mobile');
 
 });
+

@@ -10,8 +10,36 @@
         </section>
     </section>
 
-    <section>
-        slides offices
+    <section class="main_slide_office">
+        <img class="img_o" src="assets/img/o.png" alt="">
+        <div class="main_slide_office_content d-flex">
+            <div class="f-50 main_slide_office_left">
+
+                <div class="owl-carousel slide_carousel_main_office" id="slide_carousel_main_office">
+                    <img src="assets/img/img_office.jpg" alt="">
+                    <img src="assets/img/img_office.jpg" alt="">
+                    <img src="assets/img/img_office.jpg" alt="">
+                    <img src="assets/img/img_office.jpg" alt="">
+                    <img src="assets/img/img_office.jpg" alt="">
+                </div>
+
+                <img class="img_gray" src="assets/img/bg-gray.jpg" alt="">
+                <img class="dot_one" src="assets/img/dot.png" alt="">
+                <img class="dot_two" src="assets/img/dot.png" alt="">
+            </div>
+            <div class="f-50 d-flex main_slide_office_right">
+                
+                <div class="main_slide_office_right_content">
+                    <h2 class="title-default">Sede integrada e equipe conectada</h2>
+
+                    <p class="desc-default">Estrutura completa e equipe altamente qualificada para lhe atender, presencial ou virtualmente. Atendimento em diversos locais do Brasil.</p>
+
+                    <img src="assets/img/video_teste.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        
     </section>
 
     <section class="cta_find_office">
@@ -160,11 +188,11 @@
             </div>
         </article>
 
-        <div class="load_more_office">
-            <img src="assets/img/loading.png" alt="">
-        </div>
-
     </section>
+
+    <div class="load_more_office">
+        <img class="spinner" src="assets/img/loading.png" alt="">
+    </div>
 
 </main>
 
