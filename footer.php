@@ -67,6 +67,6 @@
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/script.js"></script>
-<script src="assets/js/script-office.js"></script>
+<script src="assets/js/script-office2.js"></script>
 </body>
 </html>

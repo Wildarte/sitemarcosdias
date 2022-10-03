@@ -232,8 +232,14 @@ figure.img_post figcaption{
 .form_comment .form_group label{
     color: var(--color-blue-2);
 }
+.card_office_uni{
+    display: none;
+}
 .card_office_uni:nth-child(even){
     flex-direction: row-reverse;
+}
+.card_office_uni:nth-child(even) .office_carousel.owl-carousel .owl-nav button.owl-next{
+    display: none;
 }
 /* comments */
 /* single post */
@@ -271,6 +277,12 @@ figure.img_post figcaption{
     }
     .office_contact_row p.desc-default{
         margin-bottom: 10px;
+    }
+    .btn_next_slide_img{
+        left: calc(100% - 60px);
+    }
+    .btn_prev_slide_img{
+        right: calc(100% - 60px);
     }
 }
 

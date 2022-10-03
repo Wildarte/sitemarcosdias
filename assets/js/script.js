@@ -7,6 +7,8 @@ const btn_menu = document.querySelector('.btn_menu');
 const nav_menu = document.querySelector('nav.menu');
 const btn_close_menu = document.querySelector('.btn_close_menu');
 const office_uni = document.querySelector('.office_uni');
+const office_carousel = document.querySelectorAll('.office_carousel'); //all offices slides
+
 
 $(document).ready(function(){
     $("#slide_hero").owlCarousel({
@@ -172,4 +174,34 @@ btn_close_menu.addEventListener('click', () => {
     nav_menu.classList.remove('open_menu_mobile');
 
 });
+
+
+let count_slides = 1;
+console.log('contagem slides: '+office_carousel.length);
+if(office_carousel){
+
+    office_carousel.forEach((item) => {
+
+        let id_office = item.getAttribute('id');
+
+        console.log('id: ',id_office);
+        
+        $(`#${id_office}`).owlCarousel({
+            loop:true,
+            margin:10,
+            lazyLoad: true,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav: true
+                }
+            }
+        });
+        count_slides++;
+
+    })
+}
 

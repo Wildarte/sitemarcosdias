@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            max-width: 1000px;
+            margin: auto;
+            border: 1px solid;
+        }
+
+
+
+        /* slides */
+        .slide_imgs{
+            width: 100%;
+            border: 1px solid;
+            display: inline-block;
+        }
+        .slide_imgs img{
+            width: 100%;
+        }
+        
+        .slide_imgs .content_slide_img{
+            width: 100%;
+            display: flex;
+        }
+        .slide_imgs .content_slide_img img{
+            widows: 100%!important;
+            display: none;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+        .show_img_slide{
+            display: flex!important;
+            opacity: 1!important;
+            transition: opacity .3s;
+        }
+        /* slides */
+
+    </style>
+</head>
+<body>
+
+    <h3>teste slides</h3>
+
+    <div class="container">
+        <div class="slide_imgs" id="slide_img1">
+            <div class="content_slide_img">
+                <img class="show_img_slide" src="assets/img/slide1.jpg" alt="">
+                <img class="" src="assets/img/slide2.jpg" alt="">
+                <img class="" src="assets/img/slide3.jpg" alt="">
+            </div>
+            <div class="slide_img_nav">
+                <button class="btn_prev_slide_img">
+                    <span><</span>
+                </button>
+                <button class="btn_next_slide_img">
+                    <span>></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="slide_imgs" id="slide_img2">
+            <div class="content_slide_img">
+                <img class="show_img_slide" src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg" alt="">
+                <img class="" src="" alt="">
+                <img class="" src="" alt="">
+                <img class="" src="" alt="">
+            </div>
+            <div class="slide_img_nav">
+                <button class="btn_prev_slide_img">
+                    <span> < </span>
+                </button>
+                <button class="btn_next_slide_img">
+                    <span> > </span>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+
+        <ul class="list">
+            <li class="item_list">
+                item 1
+            </li>
+        </ul>
+
+    </div>
+
+    <button id="btn_id">
+        clique
+    </button>
+
+    <script>
+
+        /*
+        slide_imgs.forEach((item, index) => {
+
+            let count_slide = 0;
+
+            let imgs = item.querySelectorAll('.slide_imgs img');
+
+            console.log('imagens nesse item: '+imgs.length);
+
+        });
+        */
+
+        function slide_img(id_slide){
+
+            if(id_slide){
+
+                const slide_imgs = document.getElementById(`${id_slide}`);//slide geral
+                const slide_item = document.querySelectorAll(`#${id_slide} img`); //imagens do slide
+                const total_slide_img = slide_item.length; //contagem de imagens do slide
+                let count_slide = 0; //contador para as imagens
+
+                const btn_prev = document.querySelector(`#${id_slide} .btn_prev_slide_img`); //btn prev
+                const btn_next = document.querySelector(`#${id_slide} .btn_next_slide_img`); //btn next
+
+                
+                setInterval(function(){
+                    if(count_slide < total_slide_img){
+
+                        slide_item.forEach((item) => {
+
+                            item.classList.remove('show_img_slide');
+
+                        });
+
+                        slide_item[count_slide].classList.add('show_img_slide');
+                        count_slide++;
+                    }else{
+                        count_slide = 0;
+
+                        slide_item.forEach((item) => {
+
+                            item.classList.remove('show_img_slide');
+
+                        });
+
+                        slide_item[count_slide].classList.add('show_img_slide');
+                        count_slide++;
+                    }
+
+                },2500);
+                
+                
+                btn_next.addEventListener('click', () => {
+
+                    if(count_slide < total_slide_img){
+
+                        slide_item.forEach((item) => {
+
+                            item.classList.remove('show_img_slide');
+
+                        });
+
+                        slide_item[count_slide].classList.add('show_img_slide');
+                        count_slide++;
+
+                    }else{
+                        count_slide = 0;
+
+                        slide_item.forEach((item) => {
+
+                            item.classList.remove('show_img_slide');
+
+                        });
+
+                        slide_item[count_slide].classList.add('show_img_slide');
+                        count_slide++;
+                    }
+
+                });
+
+                btn_prev.addEventListener('click', () => {
+
+                    if(count_slide > 0 && count_slide < total_slide_img){
+                        
+                        count_slide--;
+
+                        slide_item.forEach((item) => {
+
+                            item.classList.remove('show_img_slide');
+
+                        });
+
+                        slide_item[count_slide].classList.add('show_img_slide');
+
+                    }else{
+                        count_slide = (total_slide_img - 1);
+
+                        slide_item.forEach((item) => {
+
+                            item.classList.remove('show_img_slide');
+
+                        });
+
+                        slide_item[count_slide].classList.add('show_img_slide');
+                        
+                    }
+                    console.log('valor: '+count_slide);
+
+
+                });
+                console.log('valor: '+count_slide);
+                console.log('total_slide_img: '+total_slide_img);
+
+                
+            }
+
+            
+        }
+
+        slide_img('slide_img1');
+        slide_img('slide_img2');
+
+
+
+
+        let count_li = 2;
+        document.getElementById('btn_id').addEventListener('click', () => {
+
+            let li = document.createElement('li');
+            li.innerText = 'item '+count_li;
+
+            document.querySelector('ul.list').append(li)
+            count_li++;
+
+        });
+
+        const lis = document.getElementsByClassName('item_list');
+        const lis_array = Array.from(lis)
+
+        lis_array.forEach((item) => {
+
+            item.style.color = "blue";
+
+        });
+
+        for(let n = 0; n < lis.length; lis++){
+
+            lis[n].style.color = 'yellow'
+
+        }
+
+    </script>
+
+</body>
+</html>
