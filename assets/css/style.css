@@ -50,6 +50,9 @@
 .color-blue-dark{
     color: var(--color-white)!important;
 }
+.color-red{
+    color: red;
+}
 .d-flex{
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +147,12 @@
 	100% {
 		transform: rotate(360deg);
 	}
+}
+.d-column{
+    flex-direction: column;
+}
+.p-0-10{
+    padding: 0 10px ;
 }
 /* general style */
 

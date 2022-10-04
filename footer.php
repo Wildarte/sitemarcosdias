@@ -64,7 +64,9 @@
 
 </footer>
 
+
 <script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/script-office2.js"></script>

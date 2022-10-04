@@ -36,8 +36,10 @@ document.addEventListener('scroll', () => {
 
                 if(estaVisivel(load_more_office)){
 
-                    card_office_uni[index_slides].style.display = "flex";
-                    index_slides++;
+                    if(card_office_uni[index_slides]){
+                        card_office_uni[index_slides].style.display = "flex";
+                        index_slides++;
+                    }
         
                 }else{
         
@@ -75,6 +77,7 @@ function slide_img(id_slide){
         const slide_imgs = document.getElementById(`${id_slide}`);//slide geral
         
         if(slide_imgs){
+
             const slide_item = document.querySelectorAll(`#${id_slide} img`); //imagens do slide
             const total_slide_img = slide_item.length; //contagem de imagens do slide
             let count_slide = 0; //contador para as imagens
@@ -85,7 +88,6 @@ function slide_img(id_slide){
             const div_nav = document.querySelector(`#${id_slide} .slide_img_nav`);
 
             if(total_slide_img <= 1) div_nav.style.display = "none"
-    
             
             setInterval(function(){
                 if(count_slide < total_slide_img){
@@ -112,7 +114,6 @@ function slide_img(id_slide){
                 }
     
             },3200);
-            
             
             btn_next.addEventListener('click', () => {
     
@@ -186,3 +187,8 @@ for(let n = 1; n <= total_offices; n++){
     slide_img(`slide_img${n}`);
 
 }
+
+
+$(document).ready(function(){
+    $('#office_cep').mask('00000-000');
+});
