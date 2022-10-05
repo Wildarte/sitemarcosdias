@@ -154,6 +154,9 @@
 .p-0-10{
     padding: 0 10px ;
 }
+.p-10{
+    padding: 10px;
+}
 /* general style */
 
 
@@ -659,7 +662,9 @@ i.arrow{
     padding: 10px;
 }
 
-
+.container_mapa{
+    padding: 60px 10px;
+}
 
 /* form bottom */
 .form_bottom{

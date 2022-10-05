@@ -259,62 +259,14 @@
             </div>
         </section>
 
-        <section class="section_map">
-            <div class="container d-flex">
-                <div class="section_map_left">
-                    <h2 class="title-default">Encontre a MRD mais próxima de você</h2>
 
-                    <h3 class="subtitle-default">Estados onde a MRD está presente:</h3>
+        <section>
+            <div class="container container_mapa">
+                <?php
 
-                    <div class="office_list d-flex">
-                        <ul class="f-50">
-                            <li>
-                                Minas Gerais <strong>(Matriz)</strong>
-                            </li>
-                            <li>
-                                Rio de Janeiro
-                            </li>
-                            <li>
-                                São Paulo
-                            </li>
-                            <li>
-                                Espírito Santo
-                            </li>
-                            <li>
-                                Bahia
-                            </li>
-                            <li>
-                                Pernanbuco
-                            </li>
-                        </ul>
+                    include('./inc/mapa.php')
 
-                        <ul class="f-50">
-                            <li>
-                                Goiás
-                            </li>
-                            <li>
-                                Mato Grosso
-                            </li>
-                            <li>
-                                Mato Grosso do Sul
-                            </li>
-                            <li>
-                                Paraná
-                            </li>
-                            <li>
-                                Santa Catarina
-                            </li>
-                            <li>
-                                Rio Grande do Sul
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="section_map_right">
-                    <img src="" alt="">
-                </div>
+                ?>
             </div>
         </section>
 
@@ -325,11 +277,11 @@
             </header>
             <div class="d-flex owl-carousel office_slide" id="office_slide">
                 <div class="card_slide_office">
-                    <img src="assets/img/officeone.jpg" alt="">
-                    <a class="link_slide_office" href="">
+                    <img src="assets/img/offices/minas1/img1.jpg" alt="">
+                    <a class="link_slide_office" href="https://g.page/marcosrdiasadv?share" target="_blank">
                         <i class="bi bi-geo-alt"></i>
                         <div>
-                            <strong class="desc-default">Salvador/BA</strong>
+                            <strong class="desc-default">Belo Horizonte/MG</strong>
                             <p class="desc-default">Saiba Mais</p>
                         </div>
                         <i class="arrow bi bi-arrow-right"></i>
@@ -341,7 +293,7 @@
                     <a class="link_slide_office" href="">
                         <i class="bi bi-geo-alt"></i>
                         <div>
-                            <strong class="desc-default">Porto Alegre/RS</strong>
+                            <strong class="desc-default">Juiz de Fora/MG</strong>
                             <p class="desc-default">Saiba Mais</p>
                         </div>
                         <i class="arrow bi bi-arrow-right"></i>

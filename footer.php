@@ -70,5 +70,6 @@
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/script-office2.js"></script>
+<script src="assets/js/map-script.js"></script>
 </body>
 </html>

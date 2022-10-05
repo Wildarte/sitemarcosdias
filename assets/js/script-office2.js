@@ -7,17 +7,18 @@ let index_slides = 0;
 const load_more_office = document.querySelector('.load_more_office');
 const load_more_office_img = document.querySelector('.load_more_office img');
 
-document.addEventListener('DOMContentLoaded', () =>{
-    initialOffice(2);
-});
+if(card_office_uni.length){
+    document.addEventListener('DOMContentLoaded', () =>{
+        initialOffice(2);
+    });
+}
 
 function initialOffice(cont){
-
+    
     for(let n = 0; n < initial_slide; n++){
         card_office_uni[index_slides].style.display = "flex";
         index_slides++;
     }
-
 }
 
 

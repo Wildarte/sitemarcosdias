@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/post.css">
+    <link rel="stylesheet" href="assets/css/map-style.css">
     <title>Marcos Dias</title>
 </head>
 <body>
